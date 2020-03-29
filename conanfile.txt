@@ -1,7 +1,5 @@
-  
 [requires]
 Boost/1.72@bincrafters/stable
-
 
 [generators]
 cmake_find_package_multi
