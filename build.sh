@@ -24,6 +24,8 @@ python3 -m venv env
 source env/bin/activate
 
 pip3 install conan
+pip3 install setuptools
+pip3 install wheel
 
 conan install ..
 cmake ../src/ -DCMAKE_BUILD_TYPE=Release
