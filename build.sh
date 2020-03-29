@@ -31,6 +31,8 @@ rm -rf build-conan
 mkdir -p build-conan
 cd build-conan
 
+conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
+
 conan install ..
 cmake ../src/ -DCMAKE_BUILD_TYPE=Release
 cmake --build .
