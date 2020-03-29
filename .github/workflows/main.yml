@@ -33,7 +33,9 @@ jobs:
         mysql password: ${{ secrets.DatabasePassword }} # Required if "mysql user" exists. The password for the "mysql user"
 
     - uses: actions/checkout@v1
+      
     - name: configure
       run: chmod a+x build.sh
+
     - name: build
       run: ./build.sh
