@@ -27,6 +27,10 @@ python3 -m pip install wheel
 
 python3 -m pip install conan
 
+rm -rf build-conan
+mkdir -p build-conan
+cd build-conan
+
 conan install ..
 cmake ../src/ -DCMAKE_BUILD_TYPE=Release
 cmake --build .
