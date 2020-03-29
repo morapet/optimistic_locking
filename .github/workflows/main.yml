@@ -20,7 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: run mysql
-    - uses: mirromutth/mysql-action@v1.1
+      uses: mirromutth/mysql-action@v1.1
       with:
         host port: 3800 # Optional, default value is 3306. The port of host
         container port: 3307 # Optional, default value is 3306. The port of container
@@ -33,7 +33,7 @@ jobs:
         mysql password: ${{ secrets.DatabasePassword }} # Required if "mysql user" exists. The password for the "mysql user"
 
     - name: Checkout
-    - uses: actions/checkout@v1
+      uses: actions/checkout@v1
       
     - name: configure
       run: chmod a+x build.sh
