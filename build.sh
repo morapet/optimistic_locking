@@ -4,7 +4,7 @@ set -e
 set -x
 
 rm -rf testapp/build
-mkdir testapp/build
+mkdir -p testapp/build
 
 pip install conan
 
